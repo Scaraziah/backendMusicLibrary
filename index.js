@@ -2,6 +2,7 @@ const express = require('express');
 const repoContext =require('./repository/repository-wrapper');
 const cors = require('cors');
 const {validateProduct} = require('./middleware/products-validation')
+const {validateSong} = require('./middleware/songs-validation')
 const app = express();
 
 app.use(cors());
@@ -58,17 +59,17 @@ app.get('/api/songs/:id', (req, res) => {
     return res.send(song);
 });
 
-app.post('/api/songs', [validateProduct], (req,res) => {
-    const newProduct = req.body;
-    const addedProduct = repoContext.songs.createSong(newProduct);
-    return res.send(addedProduct);
+app.post('/api/songs', [validateSong], (req,res) => {
+    const newSong = req.body;
+    const addedSong = repoContext.songs.createSong(newSong );
+    return res.send(addedSong);
 });
 
 app.put('/app/songs/id', [validateProduct], (req, res) => {
     const id = id = req.params.id;
-    const productPropertiesToUpdate = req.body;
-    const updatedProduct = repoContext.songs.updateSong(id, productPropertiesToUpdate);
-    return res.send(updatedProduct)
+    const songPropertiesToUpdate = req.body;
+    const updatedSong  = repoContext.songs.updateSong(id, songPropertiesToUpdate);
+    return res.send(updatedSong)
 });
 
 app.delete('/app/songs/id', (req, res) => {
