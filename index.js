@@ -2,7 +2,8 @@ const express = require('express');
 const repoContext =require('./repository/repository-wrapper');
 const cors = require('cors');
 const {validateProduct} = require('./middleware/products-validation')
-const {validateSong} = require('./middleware/songs-validation')
+const {validateSong} = require('./middleware/songs-validation');
+const { default: axios } = require('axios');
 const app = express();
 
 app.use(cors());
@@ -43,11 +44,6 @@ app.delete('/app/products/id', (req, res) => {
     return res.send(updatedDataSet)
 });
 
-
-
-
-
-
 app.get('/api/songs', (req, res) => {
     const songs = repoContext.songs.findAllSongs();
     return res.send(songs);
@@ -59,7 +55,7 @@ app.get('/api/songs/:id', (req, res) => {
     return res.send(song);
 });
 
-app.post('/api/songs', [validateSong], (req,res) => {
+app.post('/api/songs', (req,res) => {
     const newSong = req.body;
     const addedSong = repoContext.songs.createSong(newSong );
     return res.send(addedSong);
