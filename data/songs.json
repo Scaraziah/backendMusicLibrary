@@ -193,14 +193,6 @@
   },
   {
     "id": 25,
-    "title": "New One",
-    "album": "New",
-    "artist": "The New",
-    "genre": "New Rock",
-    "releaseDate": "10/5/2021"
-  },
-  {
-    "id": 26,
     "title": "Old One",
     "album": "Old",
     "artist": "The New",
@@ -208,7 +200,7 @@
     "releaseDate": 1062021
   },
   {
-    "id": 27,
+    "id": 26,
     "title": "Mix One",
     "album": "Mix",
     "artist": "The New",
@@ -216,7 +208,7 @@
     "releaseDate": "10/07/2021"
   },
   {
-    "id": 28,
+    "id": 27,
     "title": "The Prayer",
     "album": "New",
     "artist": "The New",
@@ -224,51 +216,11 @@
     "releaseDate": "10/5/2021"
   },
   {
-    "id": 29,
-    "title": "The Old Prayer",
-    "album": "Old",
+    "id": 28,
+    "title": "Slash New",
+    "album": "New",
     "artist": "The New",
     "genre": "New Rock",
-    "releaseDate": "10/5/2021"
-  },
-  {
-    "id": 30,
-    "title": "adsfs",
-    "album": "asdf",
-    "artist": "asdf",
-    "genre": "adsf",
-    "releaseDate": "asdf"
-  },
-  {
-    "id": 31,
-    "title": "sadsfasd",
-    "album": "asdfasdfas",
-    "artist": "asdfasdfas",
-    "genre": "adsfasdfas",
-    "releaseDate": "asdfasdfasd"
-  },
-  {
-    "id": 32,
-    "title": "asdf",
-    "album": "asddfsaasdf",
-    "artist": "asdffdfdf",
-    "genre": "asdfsa",
-    "releaseDate": "dddf"
-  },
-  {
-    "id": 33,
-    "title": "asdfsa",
-    "album": "asdfas",
-    "artist": "asdf",
-    "genre": "asdf",
-    "releaseDate": "asdf"
-  },
-  {
-    "id": 34,
-    "title": "villy",
-    "album": "klj",
-    "artist": "lkj",
-    "genre": "lkj",
-    "releaseDate": "lkj"
+    "releaseDate": "10/05/2021"
   }
 ]
